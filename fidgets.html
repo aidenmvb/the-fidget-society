@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The fidgets — The Fidget Society</title>
+  <meta name="description" content="Six 3D-printed fidgets from The Fidget Society: Palm Stone, Orbit, Clicker, Path, Twist, and Gears.">
+  <meta name="theme-color" content="#1a1612">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css?v=19">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">The Fidget Society</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="fidgets.html" aria-current="page">The fidgets</a>
+        <a href="how.html">How it works</a>
+        <a href="about.html">Our story</a>
+        <a class="btn" href="request.html">Request a fidget</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" tabindex="-1">
+    <section class="hero-screen" style="--hero-x:74%;--hero-y:48%;--hero-x-phone:68%;--hero-y-phone:42%" aria-labelledby="hero-title">
+      <img class="hero-media" src="images/heroes/collection.jpg" width="1280" height="720" alt="AI illustration of six fidgets arranged on an oak table. Not photographs of finished fidgets." fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="wrap">
+          <p class="eyebrow">The fidgets</p>
+          <h1 id="hero-title">Something for<br>restless hands.</h1>
+          <p class="hero-support">Six shapes. Simple movements.</p>
+          <a class="btn" href="#gallery">Meet the fidgets</a>
+          <p class="hero-credit">AI illustration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p id="gallery-title" class="kicker">Gallery</p>
+          <h2>Hold, spin, press, slide, twist, turn.</h2>
+        </div>
+        <div class="card-grid" data-fidget-grid></div>
+        <noscript>
+          <p>Palm Stone, Orbit, Clicker, Path, Twist, and Gears. Open this page with JavaScript to see the illustrations, or use the request form and choose Help me choose.</p>
+        </noscript>
+        <p class="figure-note">AI illustrations. Final designs may differ.</p>
+      </div>
+    </section>
+
+    <section class="section clay-ground" aria-labelledby="made-title">
+      <div class="wrap split">
+        <h2 id="made-title">What they’re made of</h2>
+        <div class="prose">
+          <p>Printed in sanded PLA, with large parts and rounded edges. Colors include sand, sage, terracotta, slate, honey, and olive. A requested color depends on the filament on hand.</p>
+          <p>Not every design will suit every person. If a shape is wrong for someone, the project can talk through a different motion.</p>
+          <p class="inline-links"><a class="btn" href="request.html?design=help">Help me choose</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">The Fidget Society</p>
+        <p>A Lemonade Society project in Bethesda, Maryland. Fidgets are given, never sold.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="fidgets.html">The fidgets</a>
+        <a href="how.html">How it works</a>
+        <a href="about.html">Our story</a>
+        <a href="request.html">Request a fidget</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://www.liteararysociety.org/the-lemonade-society">The Lemonade Society</a>
+      </nav>
+      <p class="footer-note">Comfort objects for restless hands. Not medical devices.</p>
+    </div>
+  </footer>
+  <script src="js/catalog.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

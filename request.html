@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a fidget — The Fidget Society</title>
+  <meta name="description" content="Request a free fidget from The Fidget Society. The form tells you if it cannot send yet.">
+  <meta name="theme-color" content="#1a1612">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css?v=19">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">The Fidget Society</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="fidgets.html">The fidgets</a>
+        <a href="how.html">How it works</a>
+        <a href="about.html">Our story</a>
+        <a class="btn" href="request.html" aria-current="page">Request a fidget</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" tabindex="-1">
+    <section class="hero-screen" style="--hero-x:78%;--hero-y:50%;--hero-x-phone:86%;--hero-y-phone:44%" aria-labelledby="hero-title">
+      <img class="hero-media" src="images/heroes/note.jpg" width="1280" height="720" alt="AI illustration of fidgets beside a blank card and an open envelope. Not a photograph of a request." fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="wrap">
+          <p class="eyebrow">Request</p>
+          <h1 id="hero-title">Start with<br>a note.</h1>
+          <p class="hero-support">Tell us a little about who the fidget is for.</p>
+          <a class="btn" href="#request-form">Go to the form</a>
+          <p class="hero-credit">AI illustration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap request-layout">
+        <aside class="request-aside">
+          <h2>Before you send</h2>
+          <p>The project is small. A request does not hold a fidget or set a date. We’ll follow up about what’s possible.</p>
+          <p>Please don’t include a diagnosis, medical records, or a street address. <a class="text-link" href="privacy.html">Privacy</a></p>
+        </aside>
+        <div class="form-shell">
+          <div class="banner" id="form-banner" hidden></div>
+          <div class="banner alert" id="form-alert" role="alert" tabindex="-1" hidden></div>
+
+          <div class="confirmation" id="request-confirmation" role="status" tabindex="-1" hidden>
+            <h2>Request received.</h2>
+            <p>Your request was received. The project will follow up about availability. Sending a request does not reserve a fidget or set a delivery date.</p>
+            <p class="inline-links"><a class="text-link" href="fidgets.html">Back to the fidgets</a></p>
+          </div>
+
+          <form id="request-form" method="post" action="request.html" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="requester-name">Your name <span class="req">Required</span></label>
+                <input id="requester-name" name="requesterName" type="text" autocomplete="name" required aria-describedby="requester-name-error">
+                <p class="error" id="requester-name-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Email <span class="req">Required</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+                <p class="error" id="email-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="relationship">Relationship to the recipient, or your role <span class="req">Required</span></label>
+                <input id="relationship" name="relationship" type="text" required aria-describedby="relationship-hint relationship-error">
+                <p class="hint" id="relationship-hint">For example: daughter, caregiver, or activities director.</p>
+                <p class="error" id="relationship-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="organization">Organization <span class="fine">Optional</span></label>
+                <input id="organization" name="organization" type="text" autocomplete="organization">
+              </div>
+
+              <div class="field">
+                <label for="city">City <span class="req">Required</span></label>
+                <input id="city" name="city" type="text" autocomplete="address-level2" required aria-describedby="city-error">
+                <p class="error" id="city-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="state">State <span class="req">Required</span></label>
+                <input id="state" name="state" type="text" autocomplete="address-level1" required aria-describedby="state-hint state-error">
+                <p class="hint" id="state-hint">City and state are enough. Please don’t include a street address.</p>
+                <p class="error" id="state-error" hidden></p>
+              </div>
+
+              <fieldset class="choice">
+                <legend>Is this for one person or a care organization? <span class="req">Required</span></legend>
+                <div class="choice-row">
+                  <label for="type-individual"><input id="type-individual" type="radio" name="requestType" value="individual" required> One person</label>
+                  <label for="type-organization"><input id="type-organization" type="radio" name="requestType" value="organization"> A care organization</label>
+                </div>
+                <p class="error" id="request-type-error" hidden></p>
+              </fieldset>
+
+              <div class="field">
+                <label for="quantity">Quantity <span class="req">Required</span></label>
+                <input id="quantity" name="quantity" type="number" min="1" max="99" value="1" inputmode="numeric" required aria-describedby="quantity-hint quantity-error">
+                <p class="hint" id="quantity-hint">One is the usual request. A care home can ask for a few and explain below.</p>
+                <p class="error" id="quantity-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="quantity-note">If this is for a care organization, explain the request</label>
+                <textarea id="quantity-note" name="quantityNote" aria-describedby="quantity-note-hint quantity-note-error"></textarea>
+                <p class="hint" id="quantity-note-hint">Say who the fidgets are for in general terms. Please don’t include diagnoses or medical records.</p>
+                <p class="error" id="quantity-note-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="design">Preferred design <span class="req">Required</span></label>
+                <select id="design" name="design" required aria-describedby="design-error">
+                  <option value="">Choose one</option>
+                  <option value="help">Help me choose</option>
+                </select>
+                <p class="error" id="design-error" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="color">Preferred color <span class="fine">Optional</span></label>
+                <select id="color" name="color" aria-describedby="color-hint"></select>
+                <p class="hint" id="color-hint">A color depends on the filament on hand. It may not be available.</p>
+              </div>
+
+              <div class="field">
+                <label for="movement-note">What kinds of hand movements or textures does the person enjoy? <span class="fine">Optional</span></label>
+                <textarea id="movement-note" name="movementNote" maxlength="1000" aria-describedby="movement-hint"></textarea>
+                <p class="hint" id="movement-hint">Please don’t include sensitive medical information, a full name, or a diagnosis.</p>
+              </div>
+
+              <fieldset class="choice">
+                <legend>Do they already have a suitable fidget? <span class="fine">Optional</span></legend>
+                <div class="choice-row">
+                  <label for="has-yes"><input id="has-yes" type="radio" name="alreadyHas" value="yes"> Yes</label>
+                  <label for="has-no"><input id="has-no" type="radio" name="alreadyHas" value="no"> No</label>
+                  <label for="has-unsure"><input id="has-unsure" type="radio" name="alreadyHas" value="unsure"> Not sure</label>
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label for="contact-permission"><input id="contact-permission" name="contactPermission" type="checkbox" required> An adult helping with The Fidget Society may contact me about this request. <span class="req">Required</span></label>
+                <p class="error" id="contact-permission-error" hidden></p>
+              </div>
+
+              <div class="hp" aria-hidden="true">
+                <label for="company-website">Company website</label>
+                <input id="company-website" name="companyWebsite" type="text" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="form-actions">
+                <button class="btn" id="send-request" type="submit">Send request</button>
+                <a class="text-link" href="privacy.html">Privacy</a>
+              </div>
+            </div>
+          </form>
+          <noscript>
+            <p class="callout">This form cannot send a request without JavaScript, and no inbox is connected. Nothing is stored if the button does not stay on this page.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">The Fidget Society</p>
+        <p>A Lemonade Society project in Bethesda, Maryland. Fidgets are given, never sold.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="fidgets.html">The fidgets</a>
+        <a href="how.html">How it works</a>
+        <a href="about.html">Our story</a>
+        <a href="request.html">Request a fidget</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://www.liteararysociety.org/the-lemonade-society">The Lemonade Society</a>
+      </nav>
+      <p class="footer-note">Comfort objects for restless hands. Not medical devices.</p>
+    </div>
+  </footer>
+  <script src="js/catalog.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
