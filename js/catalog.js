@@ -1,136 +1,130 @@
 /* Product copy and image paths. Replace a picture by changing its path here.
    Page heroes use the same files named in each page's img src.
-   Hero stills are wide AI illustrations, except the homepage photograph. */
+   The product images and hero stills are reference-based AI illustrations. */
 (function (root) {
   root.FIDGET_CATALOG = [
     {
-      id: "palm-stone",
-      name: "Palm Stone",
-      motion: "Hold",
-      summary: "A quiet weight with a thumb well.",
-      movement: "It rests in the palm. A thumb can sit in the well or rub there. Nothing has to be finished.",
-      image: "images/illustrations/palm-stone.jpg",
-      hero: "images/heroes/palm-stone.jpg",
-      heroAlt: "AI illustration of a sand-colored Palm Stone on an oak table. Not a photograph of a finished fidget.",
+      id: "knob-fidget",
+      name: "Knob Fidget",
+      motion: "Move",
+      summary: "A raised knob with room to move inside a rounded base.",
+      movement: "Hold the outer base and use your fingers to move the raised center knob.",
+      image: "images/illustrations/knob-fidget.jpg",
+      hero: "images/heroes/knob-fidget.jpg",
+      heroAlt: "AI illustration of blue mushroom-shaped center knob with a visible gap inside its round housing.",
       width: 1400,
       height: 933,
       heroWidth: 1280,
       heroHeight: 720,
-      alt: "Illustration of a sand-colored oval Palm Stone with a thumb well, on a plain ivory surface. Not a photograph of a finished fidget.",
-      colorName: "Sand",
+      alt: "AI illustration of blue mushroom-shaped center knob with a visible gap inside its round housing.",
       cardFocus: "68% 55%"
     },
     {
-      id: "orbit",
-      name: "Orbit",
-      motion: "Spin",
-      summary: "Two nested rings, one inside the other.",
-      movement: "One ring sits inside the other. The motion is spinning that ring.",
-      image: "images/illustrations/orbit.jpg",
-      hero: "images/heroes/orbit.jpg",
-      heroAlt: "AI illustration of two nested sage rings, the Orbit fidget, on an oak table. Not a photograph of a finished fidget.",
+      id: "planetary-gears",
+      name: "Planetary Gears",
+      motion: "Turn",
+      summary: "An interconnected circle of gears that invites a repeating turning motion.",
+      movement: "Use a fingertip to turn an accessible gear and watch the neighboring gears move through their interlocking teeth.",
+      image: "images/illustrations/planetary-gears.jpg",
+      hero: "images/heroes/planetary-gears.jpg",
+      heroAlt: "AI illustration of gray interlocking gears around an open center inside a scalloped housing.",
       width: 1400,
       height: 933,
       heroWidth: 1280,
       heroHeight: 720,
-      alt: "Illustration of two nested sage-green rings, the Orbit fidget, on a plain ivory surface. Not a photograph of a finished fidget.",
-      colorName: "Sage",
-      cardFocus: "70% 52%"
+      alt: "AI illustration of gray interlocking gears around an open center inside a scalloped housing.",
+      cardFocus: "74% 52%"
     },
     {
-      id: "clicker",
-      name: "Clicker",
-      motion: "Press",
-      summary: "A rounded piece with two large buttons.",
-      movement: "Two large buttons sit on a rounded body. The motion is pressing them.",
-      image: "images/illustrations/clicker.jpg",
-      hero: "images/heroes/clicker.jpg",
-      heroAlt: "AI illustration of a terracotta Clicker with two round buttons, on an oak table. Not a photograph of a finished fidget.",
+      id: "infinity-cube",
+      name: "Infinity Cube",
+      motion: "Fold",
+      summary: "Hinged blocks that fold from a compact cube into an extended shape.",
+      movement: "Hold the blocks in both hands and fold them along their hinges. Continue flipping the connected sections between different shapes.",
+      image: "images/illustrations/infinity-cube.jpg",
+      hero: "images/heroes/infinity-cube.jpg",
+      heroAlt: "AI illustration of the Infinity Cube folded in blue and extended in pink, with the block hinges visible.",
       width: 1400,
       height: 933,
       heroWidth: 1280,
       heroHeight: 720,
-      alt: "Illustration of a terracotta Clicker with two round buttons, on a plain ivory surface. Not a photograph of a finished fidget.",
-      colorName: "Terracotta",
+      alt: "AI illustration of the Infinity Cube folded in blue and extended in pink, with the block hinges visible.",
       cardFocus: "68% 54%"
     },
     {
-      id: "path",
-      name: "Path",
-      motion: "Slide",
-      summary: "Beads that travel a closed loop.",
-      movement: "Beads move along a closed loop. The motion is sliding them, or tracing the loop with a finger.",
-      image: "images/illustrations/path.jpg",
-      hero: "images/heroes/path.jpg",
-      heroAlt: "AI illustration of a slate Path fidget, a closed loop with beads, on an oak table. Not a photograph of a finished fidget.",
+      id: "gear-rollers",
+      name: "Gear Rollers",
+      motion: "Roll",
+      summary: "Two chunky, ridged rollers held inside a small frame.",
+      movement: "Hold the frame and use your thumb or fingers to roll the ridged pieces.",
+      image: "images/illustrations/gear-rollers.jpg",
+      hero: "images/heroes/gear-rollers.jpg",
+      heroAlt: "AI illustration of two lime green diagonally ridged rollers and their end discs inside a supporting frame.",
       width: 1400,
       height: 933,
       heroWidth: 1280,
       heroHeight: 720,
-      alt: "Illustration of a slate-colored Path fidget, a closed loop with beads, on a plain ivory surface. Not a photograph of a finished fidget.",
-      colorName: "Slate",
+      alt: "AI illustration of two lime green diagonally ridged rollers and their end discs inside a supporting frame.",
       cardFocus: "72% 50%"
     },
     {
-      id: "twist",
-      name: "Twist",
-      motion: "Twist",
-      summary: "Two halves that screw together.",
-      movement: "Two halves meet on a thread. The motion is twisting them together or apart.",
-      image: "images/illustrations/twist.jpg",
-      hero: "images/heroes/twist.jpg",
-      heroAlt: "AI illustration of a honey-colored Twist fidget in two halves, on an oak table. Not a photograph of a finished fidget.",
+      id: "ring-fidget",
+      name: "Ring Fidget",
+      motion: "Turn",
+      summary: "A finger-loop grip paired with a small ridged wheel.",
+      movement: "Hold the body using the large finger opening and use another finger to turn the ridged wheel at the opposite end.",
+      image: "images/illustrations/ring-fidget.jpg",
+      hero: "images/heroes/ring-fidget.jpg",
+      heroAlt: "AI illustration of two-lobed Ring Fidget with a large finger opening and a smaller ridged wheel.",
       width: 1400,
       height: 933,
       heroWidth: 1280,
       heroHeight: 720,
-      alt: "Illustration of a honey-colored Twist fidget in two screw-together halves, on a plain ivory surface. Not a photograph of a finished fidget.",
-      colorName: "Honey",
-      cardFocus: "72% 48%"
+      alt: "AI illustration of two-lobed Ring Fidget with a large finger opening and a smaller ridged wheel.",
+      cardFocus: "70% 52%"
     },
     {
-      id: "gears",
-      name: "Gears",
-      motion: "Turn",
-      summary: "Gears that stay on a table while hands turn them.",
-      movement: "The piece stays on a table. The motion is turning the gears.",
-      image: "images/illustrations/gears.jpg",
-      hero: "images/heroes/gears.jpg",
-      heroAlt: "AI illustration of an olive Gears fidget on an oak table. Not a photograph of a finished fidget.",
+      id: "flexible-mesh",
+      name: "Flexible Mesh",
+      motion: "Bend",
+      summary: "A linked sheet that bends and drapes with your hands.",
+      movement: "Lift, bend, and drape the connected pieces, or trace the repeating texture with your fingertips.",
+      image: "images/illustrations/flexible-mesh.jpg",
+      hero: "images/heroes/flexible-mesh.jpg",
+      heroAlt: "AI illustration of black rectangular sheet with repeating linked segments, visible gaps and individual edge pieces.",
       width: 1400,
       height: 933,
       heroWidth: 1280,
       heroHeight: 720,
-      alt: "Illustration of an olive Gears fidget, two gears on a small base, on a plain ivory surface. Not a photograph of a finished fidget.",
-      colorName: "Olive",
-      cardFocus: "74% 52%"
+      alt: "AI illustration of black rectangular sheet with repeating linked segments, visible gaps and individual edge pieces.",
+      cardFocus: "72% 48%"
     }
   ];
 
   root.FIDGET_PAGE_HEROES = {
     home: {
-      src: "images/hands.jpg",
-      alt: "Hands holding a sand-colored palm stone on a speckled counter.",
-      credit: ""
+      src: "images/heroes/home-knob.jpg",
+      alt: "AI illustration of hands holding a blue Knob Fidget over a speckled counter.",
+      credit: "AI illustration."
     },
     fidgets: {
-      src: "images/heroes/collection.jpg",
-      alt: "AI illustration of six fidgets arranged on an oak table. Not photographs of finished fidgets.",
+      src: "images/heroes/catalog-new.jpg",
+      alt: "AI illustration of the Knob Fidget and Gear Rollers arranged on an oak table.",
       credit: "AI illustration."
     },
     how: {
-      src: "images/heroes/packing.jpg",
-      alt: "AI illustration of fidgets beside a small kraft box, tissue, and twine. Not a photograph of a delivery.",
+      src: "images/heroes/packing-new.jpg",
+      alt: "AI illustration of the Knob Fidget and Infinity Cube beside a kraft box, tissue and twine. Not a photograph of a delivery.",
       credit: "AI illustration."
     },
     about: {
-      src: "images/heroes/workbench.jpg",
-      alt: "AI illustration of a maker’s workbench with a small printer, filament, and fidgets. Not a photograph of Hendrik or his home.",
+      src: "images/heroes/workbench-new.jpg",
+      alt: "AI illustration of the Knob Fidget and Gear Rollers on a workbench with a printer and filament. Not a photograph of Hendrik or his home.",
       credit: "AI illustration."
     },
     request: {
-      src: "images/heroes/note.jpg",
-      alt: "AI illustration of fidgets beside a blank card and an open envelope. Not a photograph of a request.",
+      src: "images/heroes/note-new.jpg",
+      alt: "AI illustration of the Knob Fidget and Infinity Cube beside a blank card and open envelope. Not a photograph of a request.",
       credit: "AI illustration."
     }
   };
@@ -146,5 +140,5 @@
   ];
 
   root.FIDGET_MATERIAL_NOTE =
-    "Printed in sanded PLA, with large parts and rounded edges. Not every design will suit every person.";
+    "Ask about the material when you request a design.";
 })(window);

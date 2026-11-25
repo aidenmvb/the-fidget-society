@@ -147,8 +147,8 @@
           .join("");
         detailRoot.innerHTML =
           heroScreen(
-            "images/heroes/collection.jpg",
-            "AI illustration of six fidgets arranged on an oak table.",
+            "images/heroes/catalog-new.jpg",
+            "AI illustration of the Knob Fidget and Gear Rollers arranged on an oak table.",
             1280,
             720,
             "72%",
@@ -228,12 +228,12 @@
     catalog.forEach(function (item) {
       var option = document.createElement("option");
       option.value = item.id;
-      option.textContent = item.name + " — " + item.motion.toLowerCase();
+      option.textContent = item.name + " — " + item.motion;
       designSelect.appendChild(option);
     });
     var params = new URLSearchParams(location.search);
     var requested = params.get("design") || current;
-    if (requested && designSelect.querySelector('option[value="' + requested + '"]')) {
+    if (requested && Array.prototype.some.call(designSelect.options, function (option) { return option.value === requested; })) {
       designSelect.value = requested;
     }
   }
@@ -372,8 +372,8 @@
       if (!firstInvalid) firstInvalid = document.getElementById("type-individual");
     }
     var quantity = Number(data.quantity);
-    if (!data.quantity || !Number.isFinite(quantity) || quantity < 1) {
-      fail("quantity", "Enter a quantity of at least 1.");
+    if (!data.quantity || !Number.isInteger(quantity) || quantity < 1 || quantity > 99) {
+      fail("quantity", "Enter a whole number from 1 to 99.");
     }
     if (requestType === "organization" && !data.quantityNote) {
       fail("quantity-note", "Add a short explanation for an organization request.");

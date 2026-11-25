@@ -7,7 +7,7 @@
   <meta name="description" content="Request a free fidget from The Fidget Society. The form tells you if it cannot send yet.">
   <meta name="theme-color" content="#1a1612">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/site.css?v=19">
+  <link rel="stylesheet" href="css/site.css?v=21">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
@@ -26,7 +26,7 @@
 
   <main id="content" tabindex="-1">
     <section class="hero-screen" style="--hero-x:78%;--hero-y:50%;--hero-x-phone:86%;--hero-y-phone:44%" aria-labelledby="hero-title">
-      <img class="hero-media" src="images/heroes/note.jpg" width="1280" height="720" alt="AI illustration of fidgets beside a blank card and an open envelope. Not a photograph of a request." fetchpriority="high">
+      <img class="hero-media" src="images/heroes/note-new.jpg" width="1280" height="720" alt="AI illustration of the Knob Fidget and Infinity Cube beside a blank card and open envelope. Not a photograph of a request." fetchpriority="high">
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-copy">
         <div class="wrap">
@@ -106,7 +106,7 @@
 
               <div class="field">
                 <label for="quantity">Quantity <span class="req">Required</span></label>
-                <input id="quantity" name="quantity" type="number" min="1" max="99" value="1" inputmode="numeric" required aria-describedby="quantity-hint quantity-error">
+                <input id="quantity" name="quantity" type="number" min="1" max="99" step="1" value="1" inputmode="numeric" required aria-describedby="quantity-hint quantity-error">
                 <p class="hint" id="quantity-hint">One is the usual request. A care home can ask for a few and explain below.</p>
                 <p class="error" id="quantity-error" hidden></p>
               </div>
@@ -189,8 +189,8 @@
       <p class="footer-note">Comfort objects for restless hands. Not medical devices.</p>
     </div>
   </footer>
-  <script src="js/catalog.js"></script>
+  <script src="js/catalog.js?v=24"></script>
   <script src="js/config.js"></script>
-  <script src="js/site.js"></script>
+  <script src="js/site.js?v=24"></script>
 </body>
 </html>
